@@ -10,9 +10,10 @@ import { PostComponent } from './components/post/post.component';
 import { AppComponent } from './app.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { FrontPageComponent } from './pages/front-page/front-page.component';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent, PostsListComponent, LoaderComponent],
+  declarations: [AppComponent, PostComponent, PostsListComponent, LoaderComponent, FrontPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
