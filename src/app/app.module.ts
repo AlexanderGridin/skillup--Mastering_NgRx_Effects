@@ -9,9 +9,10 @@ import { JsonPlaceholderService } from './services/json-placeholder/json-placeho
 import { PostComponent } from './components/post/post.component';
 import { AppComponent } from './app.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent, PostsListComponent],
+  declarations: [AppComponent, PostComponent, PostsListComponent, LoaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
