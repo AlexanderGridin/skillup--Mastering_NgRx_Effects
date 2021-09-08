@@ -6,7 +6,7 @@ import { Post } from 'src/app/interfaces/post';
 
 @Injectable()
 export class JsonPlaceholderService {
-  private readonly apiUrl: string = 'https://jsonplaceholder.typicode.com/';
+  private readonly apiUrl: string = 'https://jsonplaceholder.typicode.com';
 
   constructor(private http: HttpClient) {}
 
