@@ -1,1 +1,3 @@
 <h1 class="page-title">Recent posts</h1>
+<app-loader *ngIf="!isPostsLoaded"></app-loader>
+<app-posts-list [posts]="posts"></app-posts-list>

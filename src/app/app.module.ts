@@ -15,6 +15,8 @@ import { FrontPageComponent } from './pages/front-page/front-page.component';
 import { ROUTES } from './constants/routes';
 import { MainNavigationComponent } from './components/main-navigation/main-navigation.component';
 import { RecentPostsPageComponent } from './pages/recent-posts-page/recent-posts-page.component';
+import { EffectsModule } from '@ngrx/effects';
+import { PostsEffects } from './store/posts/posts.effects';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { RecentPostsPageComponent } from './pages/recent-posts-page/recent-posts
     RouterModule.forRoot(ROUTES),
     HttpClientModule,
     StoreModule.forRoot({ posts: postsReducer }),
+    EffectsModule.forRoot([PostsEffects]),
   ],
   providers: [JsonPlaceholderService],
   bootstrap: [AppComponent],
