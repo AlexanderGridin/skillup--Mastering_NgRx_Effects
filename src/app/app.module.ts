@@ -8,9 +8,10 @@ import { postsReducer } from './store/posts/posts.reducer';
 import { JsonPlaceholderService } from './services/json-placeholder/json-placeholder.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './components/post/post.component';
+import { PostsListComponent } from './components/posts-list/posts-list.component';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent],
+  declarations: [AppComponent, PostComponent, PostsListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
