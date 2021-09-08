@@ -14,6 +14,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { FrontPageComponent } from './pages/front-page/front-page.component';
 import { ROUTES } from './constants/routes';
 import { MainNavigationComponent } from './components/main-navigation/main-navigation.component';
+import { RecentPostsPageComponent } from './pages/recent-posts-page/recent-posts-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MainNavigationComponent } from './components/main-navigation/main-navig
     LoaderComponent,
     FrontPageComponent,
     MainNavigationComponent,
+    RecentPostsPageComponent,
   ],
   imports: [
     BrowserModule,
