@@ -1,0 +1,11 @@
+.posts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.posts-list__item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
