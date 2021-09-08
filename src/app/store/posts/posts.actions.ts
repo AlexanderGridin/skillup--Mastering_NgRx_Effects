@@ -8,4 +8,9 @@ export namespace PostsActions {
     'LOAD_POSTS_SUCCESS',
     props<{ posts: Post[] }>()
   );
+
+  export const savePostsInStore = createAction(
+    'SAVE_POSTS_IN_STORE',
+    props<{ posts: Post[] }>()
+  );
 }

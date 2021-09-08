@@ -28,6 +28,15 @@ const _postsReducer = createReducer(
         isPostsLoaded: true,
       };
     }
+  ),
+  on(
+    PostsActions.savePostsInStore,
+    (state: PostsState, { posts }: { posts: Post[] }): PostsState => {
+      return {
+        ...state,
+        posts,
+      };
+    }
   )
 );
 
